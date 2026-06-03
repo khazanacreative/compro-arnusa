@@ -54,10 +54,18 @@ export function Hero() {
         }}
       />
 
+      {/* Bottom gradient fade-out to blend with next section */}
+      <div
+        className="absolute inset-x-0 bottom-0 h-48 pointer-events-none -z-10"
+        style={{
+          background: "linear-gradient(to bottom, transparent 0%, var(--background) 100%)",
+        }}
+      />
+
       {/* Animated wave overlay */}
       <svg
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-0 left-0 h-32 w-[200%] animate-wave text-background/90"
+        className="pointer-events-none absolute bottom-0 left-0 h-32 w-[200%] animate-wave text-background"
         viewBox="0 0 2880 200"
         preserveAspectRatio="none"
       >
