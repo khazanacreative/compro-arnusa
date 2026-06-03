@@ -26,9 +26,9 @@ export function Contact() {
           </p>
         </div>
 
-        <div ref={ref} className="reveal mt-14 grid gap-10 lg:grid-cols-2">
+        <div ref={ref} className="reveal mt-14 grid gap-10 lg:grid-cols-5">
           {/* Info Card */}
-          <div className="overflow-hidden rounded-3xl bg-gradient-ocean p-8 text-white shadow-elegant flex flex-col justify-between">
+          <div className="lg:col-span-2 overflow-hidden rounded-3xl bg-gradient-ocean p-8 text-white shadow-elegant flex flex-col justify-between">
             <div>
               <h3 className="font-display text-2xl font-semibold">PT. Armada Nusantara Agency</h3>
               <p className="mt-1 text-sm text-white/80">Trusted Marine Solution</p>
@@ -93,7 +93,7 @@ export function Contact() {
           </div>
 
           {/* Map Frame */}
-          <div className="overflow-hidden rounded-3xl border border-border shadow-card h-full min-h-[380px]">
+          <div className="lg:col-span-3 overflow-hidden rounded-3xl border border-border shadow-card h-full min-h-[380px]">
             <iframe
               title="Office location"
               src="https://maps.google.com/maps?q=-7.289712,112.718366&z=17&output=embed"
