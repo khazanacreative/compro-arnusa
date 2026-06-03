@@ -47,7 +47,14 @@ export function Contact() {
                   <MapPin size={18} className="mt-0.5 shrink-0 text-highlight" />
                   <span>
                     <span className="block font-semibold">Head Office</span>
-                    <span className="text-white/85">{ADDR}</span>
+                    <a
+                      href="https://maps.app.goo.gl/LoLbACoefurLgRMc9"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-white/85 hover:text-highlight transition-colors"
+                    >
+                      {ADDR}
+                    </a>
                   </span>
                 </li>
                 <li className="flex gap-3">
@@ -89,7 +96,7 @@ export function Contact() {
             <div className="overflow-hidden rounded-3xl border border-border shadow-card">
               <iframe
                 title="Office location"
-                src="https://www.google.com/maps?q=Darmo+Park+1+Blok+4C+No.10+Surabaya&output=embed"
+                src="https://maps.google.com/maps?q=-7.289712,112.718366&z=17&output=embed"
                 width="100%"
                 height="260"
                 loading="lazy"
