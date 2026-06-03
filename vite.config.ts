@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import tailwindcss from "@tailwindcss/vite";
+import { nitro } from "nitro/vite";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -15,6 +16,9 @@ export default defineConfig({
     tailwindcss(),
     tanstackStart({
       server: { entry: "src/server.ts" },
+    }),
+    nitro({
+      // Auto-detects Vercel / serverless environment, or defaults to node server
     }),
     react(),
   ],
