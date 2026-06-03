@@ -57,7 +57,7 @@
   --radius: 0.75rem;
 
   /* Brand palette mapped to oklch */
-  --background: oklch(0.984 0.005 240);            /* #F8FAFC */
+  --background: oklch(1 0 0);                      /* #ffffff */
   --foreground: oklch(0.21 0.034 264);             /* #111827 */
 
   --card: oklch(1 0 0);

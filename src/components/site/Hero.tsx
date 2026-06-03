@@ -54,14 +54,6 @@ export function Hero() {
         }}
       />
 
-      {/* Bottom gradient fade-out to blend with next section */}
-      <div
-        className="absolute inset-x-0 bottom-0 h-48 pointer-events-none -z-10"
-        style={{
-          background: "linear-gradient(to bottom, transparent 0%, var(--background) 100%)",
-        }}
-      />
-
       {/* Animated wave overlay */}
       <svg
         aria-hidden="true"
