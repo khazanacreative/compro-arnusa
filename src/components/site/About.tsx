@@ -1,4 +1,5 @@
 import aboutImg from "@/assets/about-port.jpg";
+import isoCertificate from "@/assets/iso-certificate.png";
 import { useReveal } from "@/hooks/use-reveal";
 import { ShieldCheck, Eye, Gauge, Handshake, Award } from "lucide-react";
 
@@ -59,6 +60,19 @@ export function About() {
                 <span className="font-medium text-foreground">{label}</span>
               </div>
             ))}
+          </div>
+
+          {/* Certifications Logo */}
+          <div className="mt-8 pt-6 border-t border-border">
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-3">
+              Certifications & Accreditations
+            </div>
+            <img
+              src={isoCertificate}
+              alt="ISO 9001:2015 & ASCB Certified"
+              className="h-16 object-contain opacity-90 transition-opacity hover:opacity-100 rounded"
+              height={64}
+            />
           </div>
         </div>
       </div>

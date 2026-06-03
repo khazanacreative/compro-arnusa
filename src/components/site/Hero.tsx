@@ -1,9 +1,45 @@
+import { useEffect, useRef } from "react";
 import heroImg from "@/assets/hero-vessel.jpg";
+import { gsap } from "gsap";
 
 export function Hero() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const bgRef = useRef<HTMLImageElement>(null);
+  const badgeRef = useRef<HTMLSpanElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const descRef = useRef<HTMLParagraphElement>(null);
+  const buttonsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Set initial states
+      gsap.set([badgeRef.current, titleRef.current, descRef.current, buttonsRef.current], {
+        opacity: 0,
+        y: 24,
+      });
+
+      // Background zoom in
+      gsap.fromTo(
+        bgRef.current,
+        { scale: 1.12 },
+        { scale: 1, duration: 2.0, ease: "power2.out" }
+      );
+
+      // Text elements cascade
+      const tl = gsap.timeline({ delay: 0.3 });
+      tl.to(badgeRef.current, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" })
+        .to(titleRef.current, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, "-=0.55")
+        .to(descRef.current, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, "-=0.55")
+        .to(buttonsRef.current, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, "-=0.55");
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section id="top" className="relative isolate flex min-h-[100svh] items-center overflow-hidden">
+    <section ref={containerRef} id="top" className="relative isolate flex min-h-[100svh] items-center overflow-hidden">
       <img
+        ref={bgRef}
         src={heroImg}
         alt="Cargo vessel sailing through open ocean at golden hour"
         width={1920}
@@ -32,21 +68,21 @@ export function Hero() {
       </svg>
 
       <div className="relative mx-auto w-full max-w-7xl px-5 pt-32 pb-40 lg:px-8 lg:pt-40 lg:pb-48">
-        <div className="max-w-3xl text-white reveal in">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-white/90 backdrop-blur">
+        <div className="max-w-3xl text-white">
+          <span ref={badgeRef} className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-white/90 backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-highlight" />
             Trusted Marine Solution
           </span>
-          <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.05] sm:text-5xl lg:text-7xl">
+          <h1 ref={titleRef} className="mt-6 font-display text-4xl font-semibold leading-[1.05] sm:text-5xl lg:text-7xl">
             Trusted Marine Solutions for{" "}
             <span className="text-gradient-gold">Indonesia&rsquo;s</span> Maritime Industry
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
+          <p ref={descRef} className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
             Providing professional ship agency services, crew management, vessel
             clearance, logistics support, and offshore operational assistance
             throughout Indonesia.
           </p>
-          <div className="mt-9 flex flex-wrap items-center gap-4">
+          <div ref={buttonsRef} className="mt-9 flex flex-wrap items-center gap-4">
             <a
               href="#services"
               className="inline-flex items-center rounded-full bg-highlight px-7 py-3.5 text-sm font-semibold text-highlight-foreground shadow-elegant transition-transform hover:scale-[1.03]"
