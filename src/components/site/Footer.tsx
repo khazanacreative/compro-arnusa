@@ -14,8 +14,8 @@ export function Footer() {
         className="absolute inset-x-0 top-0 h-px"
         style={{ background: "linear-gradient(90deg, transparent, var(--highlight), transparent)" }}
       />
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 lg:grid-cols-3 lg:px-8">
-        <div>
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 lg:grid-cols-12 lg:px-8">
+        <div className="lg:col-span-5">
           <div className="flex items-center gap-3">
             <img src={logo} alt="" width={48} height={48} className="h-12 w-12 object-contain" />
             <div className="leading-tight">
@@ -29,7 +29,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div>
+        <div className="lg:col-span-3 lg:pl-8">
           <h4 className="text-xs font-semibold uppercase tracking-[0.22em] text-highlight">Quick Links</h4>
           <ul className="mt-5 space-y-2.5 text-sm">
             {links.map((l) => (
@@ -42,7 +42,7 @@ export function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className="lg:col-span-4">
           <h4 className="text-xs font-semibold uppercase tracking-[0.22em] text-highlight">Head Office</h4>
           <address className="mt-5 not-italic text-sm leading-relaxed text-white/80">
             Darmo Park 1 Blok 4C No.10<br />Surabaya, Indonesia<br />
@@ -54,7 +54,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-5 py-6 text-center text-xs text-white/60 lg:px-8">
-          &copy; 2025 PT. Armada Nusantara Agency. All Rights Reserved.
+          &copy; {new Date().getFullYear()} PT. Armada Nusantara Agency. All Rights Reserved.
         </div>
       </div>
     </footer>
