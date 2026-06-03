@@ -29,7 +29,7 @@ export function Coverage() {
         <div ref={ref} className="reveal mt-14 flex flex-col gap-8">
           {/* Map */}
           <div className="w-full">
-            <div className="relative aspect-[1000/368] overflow-hidden rounded-3xl border border-border bg-gradient-ocean p-6 shadow-elegant">
+            <div className="relative overflow-hidden rounded-3xl border border-border bg-gradient-ocean p-4 sm:p-6 shadow-elegant">
               {/* Subtle grid */}
               <svg className="absolute inset-0 h-full w-full opacity-20" aria-hidden="true">
                 <defs>
@@ -40,30 +40,33 @@ export function Coverage() {
                 <rect width="100%" height="100%" fill="url(#grid)" />
               </svg>
 
-              {/* Indonesia Map */}
-              <img
-                src="/id.svg"
-                alt="Indonesia Operational Map"
-                className="absolute inset-0 h-full w-full object-contain p-4 opacity-75"
-                aria-hidden="true"
-              />
+              {/* Map & Pins wrapper to maintain constant aspect ratio and scale in sync */}
+              <div className="relative w-full aspect-[1000/368]">
+                {/* Indonesia Map */}
+                <img
+                  src="/id.svg"
+                  alt="Indonesia Operational Map"
+                  className="absolute inset-0 h-full w-full opacity-75"
+                  aria-hidden="true"
+                />
 
-              {/* Pins */}
-              {regions.map((r) => (
-                <div
-                  key={r.name}
-                  className="absolute -translate-x-1/2 -translate-y-1/2"
-                  style={{ left: `${r.x}%`, top: `${r.y}%` }}
-                >
-                  <div className="relative">
-                    <span className="absolute inset-0 -m-2 animate-ping rounded-full bg-highlight/40" />
-                    <span className="relative block h-3 w-3 rounded-full bg-highlight ring-4 ring-highlight/30" />
+                {/* Pins */}
+                {regions.map((r) => (
+                  <div
+                    key={r.name}
+                    className="absolute -translate-x-1/2 -translate-y-1/2"
+                    style={{ left: `${r.x}%`, top: `${r.y}%` }}
+                  >
+                    <div className="relative">
+                      <span className="absolute inset-0 -m-2 animate-ping rounded-full bg-highlight/40" />
+                      <span className="relative block h-2 w-2 sm:h-3 sm:w-3 rounded-full bg-highlight ring-4 ring-highlight/30" />
+                    </div>
+                    <div className="mt-1 sm:mt-2 whitespace-nowrap rounded-md bg-white/95 px-1.5 py-0.5 text-[8px] sm:text-[10px] font-semibold uppercase tracking-wide text-primary shadow">
+                      {r.name}
+                    </div>
                   </div>
-                  <div className="mt-2 whitespace-nowrap rounded-md bg-white/95 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary shadow">
-                    {r.name}
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
 
