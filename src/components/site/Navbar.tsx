@@ -52,7 +52,9 @@ export function Navbar() {
         </ul>
 
         <a
-          href="#contact"
+          href="https://wa.me/628123493526"
+          target="_blank"
+          rel="noreferrer"
           className="hidden lg:inline-flex items-center rounded-full bg-highlight px-5 py-2.5 text-sm font-semibold text-highlight-foreground shadow-card transition-transform hover:scale-[1.03]"
         >
           Get in Touch
@@ -83,7 +85,9 @@ export function Navbar() {
             ))}
             <li>
               <a
-                href="#contact"
+                href="https://wa.me/628123493526"
+                target="_blank"
+                rel="noreferrer"
                 onClick={() => setOpen(false)}
                 className="mt-2 block rounded-full bg-highlight px-5 py-2.5 text-center text-sm font-semibold text-highlight-foreground"
               >
