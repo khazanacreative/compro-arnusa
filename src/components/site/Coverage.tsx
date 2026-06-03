@@ -26,9 +26,9 @@ export function Coverage() {
           </p>
         </div>
 
-        <div ref={ref} className="reveal mt-14 grid gap-10 lg:grid-cols-5 lg:gap-12">
+        <div ref={ref} className="reveal mt-14 flex flex-col gap-8">
           {/* Map */}
-          <div className="lg:col-span-3">
+          <div className="w-full">
             <div className="relative aspect-[1000/368] overflow-hidden rounded-3xl border border-border bg-gradient-ocean p-6 shadow-elegant">
               {/* Subtle grid */}
               <svg className="absolute inset-0 h-full w-full opacity-20" aria-hidden="true">
@@ -68,7 +68,7 @@ export function Coverage() {
           </div>
 
           {/* Region list */}
-          <ul className="lg:col-span-2 space-y-3">
+          <ul className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             {regions.map((r) => (
               <li
                 key={r.name}
