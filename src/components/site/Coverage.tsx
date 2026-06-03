@@ -9,6 +9,25 @@ const regions = [
   { name: "Papua", x: 88, y: 60, ports: "Sorong · Jayapura" },
 ];
 
+const pins = [
+  // Sumatra
+  { name: "Belawan", x: 12, y: 28 },
+  { name: "Dumai", x: 17, y: 41 },
+  { name: "Panjang", x: 27, y: 72 },
+  // Java
+  { name: "Tanjung Priok", x: 37, y: 81 },
+  { name: "Tanjung Perak", x: 47, y: 82 },
+  // Kalimantan
+  { name: "Balikpapan", x: 53, y: 48 },
+  { name: "Banjarmasin", x: 51, y: 61 },
+  // Sulawesi
+  { name: "Makassar", x: 61, y: 65 },
+  { name: "Bitung", x: 71, y: 31 },
+  // Papua
+  { name: "Sorong", x: 80, y: 52 },
+  { name: "Jayapura", x: 96, y: 59 },
+];
+
 export function Coverage() {
   const ref = useReveal<HTMLDivElement>();
   return (
@@ -51,18 +70,18 @@ export function Coverage() {
                 />
 
                 {/* Pins */}
-                {regions.map((r) => (
+                {pins.map((p) => (
                   <div
-                    key={r.name}
+                    key={p.name}
                     className="absolute -translate-x-1/2 -translate-y-1/2"
-                    style={{ left: `${r.x}%`, top: `${r.y}%` }}
+                    style={{ left: `${p.x}%`, top: `${p.y}%` }}
                   >
                     <div className="relative">
                       <span className="absolute inset-0 -m-2 animate-ping rounded-full bg-highlight/40" />
                       <span className="relative block h-2 w-2 sm:h-3 sm:w-3 rounded-full bg-highlight ring-4 ring-highlight/30" />
                     </div>
                     <div className="mt-1 sm:mt-2 whitespace-nowrap rounded-md bg-white/95 px-1.5 py-0.5 text-[8px] sm:text-[10px] font-semibold uppercase tracking-wide text-primary shadow">
-                      {r.name}
+                      {p.name}
                     </div>
                   </div>
                 ))}
