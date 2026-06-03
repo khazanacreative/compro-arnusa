@@ -71,7 +71,7 @@ export function Hero() {
         <div className="max-w-3xl text-white">
           <span ref={badgeRef} className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-white/90 backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-highlight" />
-            Trusted Marine Solution
+            PT. Armada Nusantara Agency
           </span>
           <h1 ref={titleRef} className="mt-6 font-display text-4xl font-semibold leading-[1.05] sm:text-5xl lg:text-7xl">
             Trusted Marine Solutions for{" "}
