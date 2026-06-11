@@ -2,8 +2,8 @@ import { MapPin, Phone, Smartphone, Mail, Globe, MessageCircle } from "lucide-re
 import { useReveal } from "@/hooks/use-reveal";
 
 const PHONE = "+62 31 99544156";
-const MOBILE = "+62 812 3493 526";
-const WA = "628123493526"; // corrected to match +62 812 3493 526
+const MOBILE = "+62 878 5216 0631";
+const WA = "6287852160631";
 const EMAIL = "agency@arnusa-shipagency.co.id";
 const SITE = "www.arnusa-shipagency.co.id";
 const ADDR = "Darmo Park 1 Blok 4C No.10, Surabaya, Indonesia";

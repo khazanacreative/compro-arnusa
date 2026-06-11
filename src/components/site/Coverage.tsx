@@ -2,29 +2,35 @@ import { MapPin } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
 
 const regions = [
-  { name: "Sumatra", x: 18, y: 49, ports: "Belawan · Dumai · Panjang" },
-  { name: "Java", x: 41, y: 81, ports: "Tanjung Priok · Tanjung Perak" },
-  { name: "Kalimantan", x: 50, y: 49, ports: "Balikpapan · Banjarmasin" },
-  { name: "Sulawesi", x: 66, y: 49, ports: "Makassar · Bitung" },
-  { name: "Papua", x: 88, y: 60, ports: "Sorong · Jayapura" },
+  { name: "Sumatra", x: 18, y: 49, ports: "Belawan · Kuala Tanjung · Dumai · Panjang" },
+  { name: "Java", x: 41, y: 81, ports: "Tanjung Priok · Tanjung Perak · Tanjung Mas" },
+  { name: "Kalimantan", x: 50, y: 49, ports: "Balikpapan · Samarinda · Banjarmasin · Pontianak" },
+  { name: "Sulawesi", x: 66, y: 49, ports: "Makassar · Bitung · Morowali" },
+  { name: "Papua", x: 88, y: 60, ports: "Sorong · Jayapura · Manokwari" },
 ];
 
 const pins = [
   // Sumatra
   { name: "Belawan", x: 12, y: 28 },
+  { name: "Kuala Tanjung", x: 14, y: 33 },
   { name: "Dumai", x: 17, y: 41 },
   { name: "Panjang", x: 27, y: 72 },
   // Java
   { name: "Tanjung Priok", x: 37, y: 81 },
+  { name: "Tanjung Mas", x: 42, y: 81.5 },
   { name: "Tanjung Perak", x: 47, y: 82 },
   // Kalimantan
-  { name: "Balikpapan", x: 53, y: 48 },
+  { name: "Pontianak", x: 44, y: 48 },
   { name: "Banjarmasin", x: 51, y: 61 },
+  { name: "Balikpapan", x: 53, y: 48 },
+  { name: "Samarinda", x: 55, y: 45 },
   // Sulawesi
   { name: "Makassar", x: 61, y: 65 },
+  { name: "Morowali", x: 66, y: 53 },
   { name: "Bitung", x: 71, y: 31 },
   // Papua
   { name: "Sorong", x: 80, y: 52 },
+  { name: "Manokwari", x: 84, y: 51 },
   { name: "Jayapura", x: 96, y: 59 },
 ];
 
