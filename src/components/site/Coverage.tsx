@@ -11,27 +11,27 @@ const regions = [
 
 const pins = [
   // Sumatra
-  { name: "Belawan", x: 12, y: 28 },
-  { name: "Kuala Tanjung", x: 14, y: 33 },
-  { name: "Dumai", x: 17, y: 41 },
-  { name: "Panjang", x: 27, y: 72 },
+  { name: "Belawan", x: 12, y: 25 },
+  { name: "Kuala Tanjung", x: 13.5, y: 30 },
+  { name: "Dumai", x: 17.5, y: 30 },
+  { name: "Panjang", x: 25, y: 66 },
   // Java
-  { name: "Tanjung Priok", x: 37, y: 81 },
-  { name: "Tanjung Mas", x: 42, y: 81.5 },
-  { name: "Tanjung Perak", x: 47, y: 82 },
+  { name: "Tanjung Priok", x: 28, y: 70 },
+  { name: "Tanjung Mas", x: 35, y: 73 },
+  { name: "Tanjung Perak", x: 44, y: 73 },
   // Kalimantan
-  { name: "Pontianak", x: 44, y: 48 },
-  { name: "Banjarmasin", x: 51, y: 61 },
-  { name: "Balikpapan", x: 53, y: 48 },
-  { name: "Samarinda", x: 55, y: 45 },
+  { name: "Pontianak", x: 34.5, y: 41 },
+  { name: "Banjarmasin", x: 45, y: 60 },
+  { name: "Balikpapan", x: 48, y: 46 },
+  { name: "Samarinda", x: 49, y: 42 },
   // Sulawesi
-  { name: "Makassar", x: 61, y: 65 },
-  { name: "Morowali", x: 66, y: 53 },
-  { name: "Bitung", x: 71, y: 31 },
+  { name: "Makassar", x: 55, y: 68 },
+  { name: "Morowali", x: 60, y: 57 },
+  { name: "Bitung", x: 65.5, y: 22 },
   // Papua
-  { name: "Sorong", x: 80, y: 52 },
-  { name: "Manokwari", x: 84, y: 51 },
-  { name: "Jayapura", x: 96, y: 59 },
+  { name: "Sorong", x: 76.5, y: 35 },
+  { name: "Manokwari", x: 80, y: 34 },
+  { name: "Jayapura", x: 95, y: 57 },
 ];
 
 export function Coverage() {
