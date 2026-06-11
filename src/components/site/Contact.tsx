@@ -42,9 +42,9 @@ export function Contact() {
                       href="https://maps.app.goo.gl/LoLbACoefurLgRMc9"
                       target="_blank"
                       rel="noreferrer"
-                      className="text-white/85 hover:text-highlight transition-colors"
+                      className="text-white/85 hover:text-highlight transition-colors block"
                     >
-                      {ADDR}
+                      Jl. Mayjend Sungkono,<br />Darmo Park 1 Blok 4C No.10,<br />Surabaya, Indonesia
                     </a>
                   </span>
                 </li>
