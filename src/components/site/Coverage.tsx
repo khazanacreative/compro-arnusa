@@ -18,7 +18,7 @@ const pins = [
   // Java
   { name: "Tanjung Priok", x: 28, y: 70 },
   { name: "Tanjung Mas", x: 35, y: 73 },
-  { name: "Tanjung Perak", x: 44, y: 73 },
+  { name: "Tanjung Perak", x: 42.5, y: 73 },
   // Kalimantan
   { name: "Pontianak", x: 34.5, y: 41 },
   { name: "Banjarmasin", x: 45, y: 60 },
@@ -29,9 +29,9 @@ const pins = [
   { name: "Morowali", x: 60, y: 57 },
   { name: "Bitung", x: 65.5, y: 22 },
   // Papua
-  { name: "Sorong", x: 76.5, y: 35 },
-  { name: "Manokwari", x: 80, y: 34 },
-  { name: "Jayapura", x: 95, y: 57 },
+  { name: "Sorong", x: 76.5, y: 43 },
+  { name: "Manokwari", x: 80, y: 40 },
+  { name: "Jayapura", x: 95, y: 60 },
 ];
 
 export function Coverage() {
