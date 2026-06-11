@@ -6,7 +6,7 @@ const MOBILE = "+62 878 5216 0631";
 const WA = "6287852160631";
 const EMAIL = "agency@arnusa-shipagency.co.id";
 const SITE = "www.arnusa-shipagency.co.id";
-const ADDR = "Darmo Park 1 Blok 4C No.10, Surabaya, Indonesia";
+const ADDR = "Jl. Mayjend Sungkono, Darmo Park 1 Blok 4C No.10, Surabaya, Indonesia";
 
 export function Contact() {
   const ref = useReveal<HTMLDivElement>();

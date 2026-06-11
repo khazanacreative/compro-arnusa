@@ -50,7 +50,7 @@ export const Route = createFileRoute("/")({
           email: "agency@arnusa-shipagency.co.id",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Darmo Park 1 Blok 4C No.10",
+            streetAddress: "Jl. Mayjend Sungkono, Darmo Park 1 Blok 4C No.10",
             addressLocality: "Surabaya",
             addressCountry: "ID",
           },

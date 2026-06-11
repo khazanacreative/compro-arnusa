@@ -45,7 +45,7 @@ export function Footer() {
         <div className="lg:col-span-4">
           <h4 className="text-xs font-semibold uppercase tracking-[0.22em] text-highlight">Head Office</h4>
           <address className="mt-5 not-italic text-sm leading-relaxed text-white/80">
-            Darmo Park 1 Blok 4C No.10<br />Surabaya, Indonesia<br />
+            Jl. Mayjend Sungkono, Darmo Park 1 Blok 4C No.10<br />Surabaya, Indonesia<br />
             <a href="tel:+623199544156" className="hover:text-highlight">+62 31 99544156</a><br />
             <a href="mailto:agency@arnusa-shipagency.co.id" className="break-all hover:text-highlight">agency@arnusa-shipagency.co.id</a>
           </address>
