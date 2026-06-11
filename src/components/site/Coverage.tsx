@@ -82,12 +82,17 @@ export function Coverage() {
                     className="absolute -translate-x-1/2 -translate-y-1/2"
                     style={{ left: `${p.x}%`, top: `${p.y}%` }}
                   >
-                    <div className="relative">
-                      <span className="absolute inset-0 -m-2 animate-ping rounded-full bg-highlight/40" />
-                      <span className="relative block h-2 w-2 sm:h-3 sm:w-3 rounded-full bg-highlight ring-4 ring-highlight/30" />
-                    </div>
-                    <div className="mt-1 sm:mt-2 whitespace-nowrap rounded-md bg-white/95 px-1.5 py-0.5 text-[8px] sm:text-[10px] font-semibold uppercase tracking-wide text-primary shadow">
-                      {p.name}
+                    <div className="relative flex flex-col items-center">
+                      {/* The dot itself */}
+                      <div className="relative flex h-2 w-2 sm:h-3 sm:w-3 items-center justify-center">
+                        <span className="absolute inset-0 -m-2 animate-ping rounded-full bg-highlight/40" />
+                        <span className="relative block h-full w-full rounded-full bg-highlight ring-4 ring-highlight/30" />
+                      </div>
+                      
+                      {/* The label positioned absolutely below the dot, centered and not affecting height */}
+                      <div className="absolute top-full mt-1.5 whitespace-nowrap rounded-md bg-white/95 px-1.5 py-0.5 text-[8px] sm:text-[10px] font-semibold uppercase tracking-wide text-primary shadow">
+                        {p.name}
+                      </div>
                     </div>
                   </div>
                 ))}
