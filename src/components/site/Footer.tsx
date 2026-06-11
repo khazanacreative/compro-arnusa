@@ -24,7 +24,7 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/75">
-            Professional ship agency, crew management, and Marine support
+            Professional ship agency, crew management, and marine support
             services across Indonesia&rsquo;s strategic maritime locations.
           </p>
         </div>

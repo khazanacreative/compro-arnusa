@@ -13,7 +13,7 @@ import { Footer } from "@/components/site/Footer";
 
 const TITLE = "PT. Armada Nusantara Agency — Trusted Marine Solution";
 const DESC =
-  "Professional ship agency, crew management, vessel clearance, logistics support, and Marine operational assistance across Indonesia.";
+  "Professional ship agency, crew management, vessel clearance, logistics support, and marine operational assistance across Indonesia.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

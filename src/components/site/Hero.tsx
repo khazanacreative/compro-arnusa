@@ -79,7 +79,7 @@ export function Hero() {
           </h1>
           <p ref={descRef} className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
             Providing professional ship agency services, crew management, vessel
-            clearance, logistics support, and Marine operational assistance
+            clearance, logistics support, and marine operational assistance
             throughout Indonesia.
           </p>
           <div ref={buttonsRef} className="mt-9 flex flex-wrap items-center gap-4">
