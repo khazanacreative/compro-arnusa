@@ -24,7 +24,7 @@ export function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass border-b border-border shadow-sm" : "bg-transparent"
+        scrolled ? "bg-background border-b border-border shadow-sm" : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
@@ -70,7 +70,7 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <div className="lg:hidden glass border-t border-border">
+        <div className="lg:hidden bg-background border-t border-border">
           <ul className="mx-auto max-w-7xl px-5 py-4 space-y-2">
             {links.map((l) => (
               <li key={l.href}>
